@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import WaitlistForm from "./WaitlistForm";
+import WaitlistForm from "./components/WaitlistForm";
 
 export default function MoveAppLanding() {
   const [email, setEmail] = useState("");
