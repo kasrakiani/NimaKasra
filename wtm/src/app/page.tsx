@@ -42,7 +42,7 @@ export default function MoveAppLanding() {
     <div className="bg-black text-white min-h-screen font-sans">
       {/* NAVBAR */}
       <nav className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 bg-black bg-opacity-80 backdrop-blur-md border-b border-gray-900">
-        <h1 className="text-5xl font-extrabold tracking-wide">What's The Move</h1>
+        <h1 className="text-5xl font-extrabold tracking-wide">What&rsquo;s The Move</h1>
         <div className="space-x-8 hidden md:flex text-lg font-medium">
           <a href="#home" className="hover:text-purple-400 transition">
             Home
@@ -67,7 +67,7 @@ export default function MoveAppLanding() {
           transition={{ duration: 0.8 }}
           className="text-8xl font-extrabold mb-6 bg-gradient-to-r from-purple-400 to-indigo-500 bg-clip-text text-transparent"
         >
-          What's The Move
+          What&rsquo;s The Move
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -100,7 +100,7 @@ export default function MoveAppLanding() {
           </form>
         ) : (
           <p className="text-green-400 text-lg font-medium mt-6">
-            🔥 You're on the list. We'll notify you at launch.
+            🔥 You&rsquo;re on the list. We&rsquo;ll notify you at launch.
           </p>
         )}
       </section>
@@ -157,7 +157,7 @@ export default function MoveAppLanding() {
           Be First to Know
         </h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-12 text-lg">
-          Join the early list and get notified when we launch in your city. We're
+          Join the early list and get notified when we launch in your city. We&rsquo;re
           rolling out move by move.
         </p>
         {!submitted ? (
@@ -181,13 +181,13 @@ export default function MoveAppLanding() {
             </button>
           </form>
         ) : (
-          <p className="text-green-400 text-lg font-medium">✅ You're all set. Keep an eye on your inbox.</p>
+          <p className="text-green-400 text-lg font-medium">✅ You&rsquo;re all set. Keep an eye on your inbox.</p>
         )}
       </section>
 
       {/* FOOTER */}
       <footer className="text-center py-12 text-gray-500 text-sm border-t border-gray-900 bg-black">
-        <p>© 2025 WTM — What's The Move?</p>
+        <p>© 2025 WTM — What&rsquo;s The Move?</p>
       </footer>
     </div>
   );
