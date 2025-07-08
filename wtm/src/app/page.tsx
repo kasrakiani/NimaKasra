@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import WaitlistForm from "./WaitlistForm";
 
 export default function MoveAppLanding() {
   const [email, setEmail] = useState("");
@@ -79,25 +80,7 @@ export default function MoveAppLanding() {
           basketball, popups, jam sessions, or chill kickbacks — wherever you are.
         </motion.p>
         {!submitted ? (
-          <form
-            action="https://formspree.io/f/xpwrnawr"
-            method="POST"
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto"
-          >
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Enter your email"
-              className="bg-zinc-900 text-white placeholder-gray-500 px-5 py-3 rounded-xl w-full sm:w-auto border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-600"
-            />
-            <button
-              type="submit"
-              className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:opacity-90 transition px-8 py-3 rounded-xl font-semibold"
-            >
-              Join Waitlist
-            </button>
-          </form>
+          <WaitlistForm />
         ) : (
           <p className="text-green-400 text-lg font-medium mt-6">
             🔥 You&rsquo;re on the list. We&rsquo;ll notify you at launch.
@@ -161,25 +144,7 @@ export default function MoveAppLanding() {
           rolling out move by move.
         </p>
         {!submitted ? (
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto"
-          >
-            <input
-              type="email"
-              required
-              placeholder="Your email address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="bg-zinc-900 text-white placeholder-gray-500 px-5 py-3 rounded-xl w-full sm:w-auto border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-600"
-            />
-            <button
-              type="submit"
-              className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:opacity-90 px-8 py-3 rounded-xl text-white font-semibold"
-            >
-              Get Early Access
-            </button>
-          </form>
+          <WaitlistForm />
         ) : (
           <p className="text-green-400 text-lg font-medium">✅ You&rsquo;re all set. Keep an eye on your inbox.</p>
         )}
