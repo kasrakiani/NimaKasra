@@ -80,15 +80,15 @@ export default function MoveAppLanding() {
         </motion.p>
         {!submitted ? (
           <form
-            onSubmit={handleSubmit}
+            action="https://formspree.io/f/xpwrnawr"
+            method="POST"
             className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto"
           >
             <input
               type="email"
+              name="email"
               required
               placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
               className="bg-zinc-900 text-white placeholder-gray-500 px-5 py-3 rounded-xl w-full sm:w-auto border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-600"
             />
             <button
